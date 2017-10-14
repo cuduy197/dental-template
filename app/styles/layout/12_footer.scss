@@ -37,6 +37,21 @@
         padding: 0.5em 0;
         outline: none;
     }
+    .recent-post {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2em;
+        width: 320px;
+    }
+    .services-container {
+        display: inline-block;
+        margin-right: 8em;
+        vertical-align: top;
+    }
+    .business-container {
+        display: inline-block;
+        vertical-align: top;
+    }
     .social-icon {
         bottom: 30px;
         margin: auto;
