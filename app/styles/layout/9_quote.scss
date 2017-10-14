@@ -1,0 +1,42 @@
+@import "var";
+.quote {
+    /* @extend .debug; */
+    min-height: $quote-height;
+    padding-top: $quote-height/5;
+    text-align: center;
+    .quote-icon {
+        color: $blue;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .quote-text {
+        font-size: 20px;
+        font-weight: 400px;
+        color: $gray-bold;
+    }
+    .quote-author {
+        margin-top: $quote-height/10;
+        line-height: 0.5;
+        p:first-child {
+            color: $blue;
+            font-weight: bold;
+        }
+        p:last-child {
+            color: $gray-bold;
+        }
+    }
+    .quote-btn {
+        margin-top: $quote-height/20;
+        .btn-active {
+            background: $blue;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .btn-deactive {
+            background: $gray;
+            color: white;
+            padding: 10px;
+        }
+    }
+}

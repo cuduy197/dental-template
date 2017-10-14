@@ -1,0 +1,89 @@
+@import "var";
+.about {
+    /*   @extend .debug; */
+    min-height: $about-height;
+    background: $bg-gray;
+    .about-intro {
+        padding: 1em 25vw;
+        .intro-title {
+            color: $blue;
+            padding: 0;
+            margin: 0;
+        }
+        .intro-subtitle {
+            color: $gray;
+            padding: 0.2em 0 0 0;
+            margin: 0 0 1.5em 0;
+            font-weight: 400;
+            font-size: 19px;
+        }
+    }
+    .about-card {
+        display: inline-block;
+        margin-right: 1.5em;
+        overflow: auto;
+        .card {
+            padding: 0 1em 0 0;
+            background: white;
+            height: 241px;
+            width: 260px;
+            float: right;
+            padding-left: 10px;
+            h2 {
+                color: $blue;
+            }
+            p {
+                color: $gray;
+            }
+            .readmore-button {
+                background: $orange;
+                color: white;
+                font-weight: 600;
+                outline: none;
+                border: 0 solid white;
+                font-family: "Oswald";
+                padding: 8px 20px;
+            }
+            .readmore-button:hover {
+                background: rgb(250, 131, 76);
+                cursor: pointer;
+            }
+        }
+    }
+    .tabs {
+        overflow: auto;
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            .col {
+                width: calc(100% / 3);
+                text-align: center;
+                background: $blue;
+                color: white;
+                position: relative;
+                font-family: "Oswald";
+            }
+            .active {
+                background: white;
+                color: $blue;
+            }
+            .col:hover {
+                background: white;
+                color: $blue;
+                cursor: pointer;
+            }
+        }
+        .content {
+            padding: 1em;
+            h3 {
+                color: $blue;
+            }
+            p {
+                color: $gray;
+                font-size: 12px;
+            }
+        }
+    }
+}

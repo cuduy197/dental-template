@@ -1,0 +1,43 @@
+@import "var";
+.wellcome {
+    /*  @extend .debug; */
+    min-height: $wellcome-height;
+    text-align: center;
+    position: relative;
+    background-image: url("/images/wellcome-overlay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    .intro {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        .wellcome-title {
+            color: $blue;
+            font-family: "Oswald", Tahoma, sans-serif;
+            font-size: 60px;
+            padding: 0;
+            margin: 0;
+        }
+        .wellcome-subtitle {
+            color: $dark;
+            font-size: 18px;
+            padding: 0;
+            margin: 0.1 0 2em 0;
+        }
+        .readmore-button {
+            margin-top: 1em;
+            background: $orange;
+            color: white;
+            font-weight: 500;
+            outline: none;
+            border: 0 solid white;
+            padding: 10px 20px;
+            font-family: "Oswald";
+        }
+        .readmore-button:hover {
+            background: rgb(250, 131, 76);
+            cursor: pointer;
+        }
+    }
+}

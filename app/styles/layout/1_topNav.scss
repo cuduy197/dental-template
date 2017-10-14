@@ -1,0 +1,44 @@
+@import "var";
+.topNav {
+    /*  @extend .debug; */
+    min-height: $topNav-height;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px 0;
+        overflow: hidden;
+        .nav-right {
+            float: right;
+        }
+        .nav-right li {
+            margin-right: 1em;
+        }
+        .nav-right li:last-child {
+            margin: 0em !important;
+        }
+        .nav-left {
+            float: left;
+            li {
+                i {
+                    margin-left: 5px;
+                    font-size: 18px;
+                    margin-right: 0.2em;
+                }
+            }
+        }
+        .nav-left li:last-child {
+            margin-left: 1em;
+        }
+    }
+    li {
+        float: left;
+    }
+    li a {
+        color: $gray;
+        display: block;
+        padding: 3px;
+        font-size: 11px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

@@ -1,0 +1,91 @@
+@import "var";
+.appointment {
+    /*     @extend .debug; */
+    min-height: $appointment-height;
+    background-image: url("/images/form-overlay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    .container-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 60%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1em 4em;
+        .text {
+            h2 {
+                color: $blue;
+                font-size: 30px;
+                padding: 0.2em 0;
+                margin: 0.2em 0;
+            }
+            span {
+                color: $gray-bold;
+            }
+            margin-bottom: 0.8em;
+        }
+        .input-group {
+            .input-left {
+                /*   border: 2px solid red; */
+                width: 48%;
+                float: left;
+                input {
+                    background: $input-bg-dark;
+                    padding: 0.5em;
+                    margin: 0.5em 0;
+                    width: 97%;
+                }
+                input:first-child {
+                    margin: 0 0 0.5em 0;
+                }
+                input:last-child {
+                    margin: 0.5em 0 0 0;
+                }
+                 ::placeholder {
+                    color: white;
+                }
+            }
+            .input-right {
+                width: 48%;
+                float: right;
+                /* border: 2px solid red; */
+                textarea {
+                    background: $input-bg-dark;
+                    min-width: 100%;
+                    min-height: 130px;
+                    padding: 0.5em;
+                }
+                 ::placeholder {
+                    color: white;
+                }
+            }
+            .submit {
+                clear: both;
+                float: none;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                .submit-button {
+                    /*                 position: absolute;
+                    top: 92%;
+                    left: 50%;
+                    transform: translate(-50%, -92%); */
+                    margin: 0 auto;
+                    background: $orange;
+                    padding: 8px 15px;
+                    color: #f2f4f6 !important;
+                    outline: none;
+                    border: 0px solid white !important;
+                    font-weight: bold;
+                }
+                .submit-button:hover {
+                    background: orangered;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

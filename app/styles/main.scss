@@ -1,0 +1,34 @@
+@import "layout/1_topNav";
+@import "layout/2_nav";
+@import "layout/3_wellcome";
+@import "layout/4_sliderWellcome";
+@import "layout/5_contact";
+@import "layout/6_about";
+@import "layout/7_whatWeDo";
+@import "layout/8_sliderWhatWeDo";
+@import "layout/9_quote";
+@import "layout/10_appointment";
+@import "layout/11_partner";
+@import "layout/12_footer";
+@import "layout/13_navFooter";
+@import "bulma";
+body {
+    background: white;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    margin: 0 15%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center !important;
+}

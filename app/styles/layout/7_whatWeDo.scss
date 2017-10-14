@@ -1,0 +1,17 @@
+@import "var";
+.whatWeDo {
+    /* @extend .debug; */
+    min-height: $whatWeDo-height;
+    text-align: center;
+    h1 {
+        color: $blue;
+        font-weight: bold;
+        font-family: "Oswald";
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    h2 {
+        color: $blue;
+        font-size: 18px;
+    }
+}

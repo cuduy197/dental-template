@@ -1,0 +1,10 @@
+@import "var";
+.partner {
+    /*  @extend .debug; */
+    min-height: $partner-height;
+    .image-list {
+        img {
+            margin-left: 1.75em;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import "var";
+.preFooter {
+    /*  @extend .debug; */
+    min-height: $footer-height;
+    background: $bg-gray;
+    color: $dark;
+    padding-top: 1.5em;
+    p {
+        color: $gray-bold;
+        font-size: 15px;
+    }
+    h2 {
+        color: $gray;
+        font-size: 18px;
+    }
+    ul {
+        list-style-type: none;
+        li {
+            margin-bottom: 0.5em;
+        }
+    }
+    table {
+        color: $dark;
+        font-size: 13px;
+        tr {
+            th {
+                padding: 0 2em 0.5em 0;
+            }
+        }
+    }
+    input {
+        border: 2px solid white;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        background: transparent;
+        padding: 0.5em 0;
+        outline: none;
+    }
+    .social-icon {
+        bottom: 30px;
+        margin: auto;
+        padding-bottom: 1em;
+        text-align: center;
+        font-size: 25px;
+        display: block;
+        li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 12px;
+            i {
+                padding: 10px;
+                color: white;
+                width: 25px;
+            }
+        }
+        .google {
+            background: #c43542;
+        }
+        .facebook {
+            background: #296cbc;
+        }
+        .twitter {
+            background: #0cc9e5;
+        }
+        .linkedin {
+            background: #1958cc;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "var";
+.contact {
+    /*     @extend .debug; */
+    min-height: $contact-height;
+    background: $blue;
+    padding: 0.2em;
+    color: white;
+    text-align: center;
+    h1 {
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
